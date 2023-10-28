@@ -25,9 +25,8 @@ ListNode* insertFirst(ListNode* head, ColumInfo value) {
 	return added;
 }
 ListNode* deleteFirst(ListNode* head) {
-	ListNode* removed = (ListNode*)malloc(sizeof(ListNode));
-
 	if (head == NULL)	return NULL;
+	ListNode* removed = (ListNode*)malloc(sizeof(ListNode));
 
 	removed = head;
 	head = head->pNext;
