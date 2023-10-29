@@ -20,7 +20,6 @@ typedef struct ListNode {
 void printList(ListNode* head);
 ListNode* insertFirst(ListNode* head, ColumInfo value);
 ListNode* deleteFirst(ListNode* head);
-
-
+ListNode* search(ListNode* head, ColumInfo value);
 
 #endif

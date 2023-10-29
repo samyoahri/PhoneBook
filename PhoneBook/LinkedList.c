@@ -34,3 +34,13 @@ ListNode* deleteFirst(ListNode* head) {
 
 	return head;
 }
+ListNode* search(ListNode* head, ColumInfo value) {
+	ListNode* searched = head;
+	
+	while (strcmp(searched->columinfo.name, value.name) != 1
+		&& strcmp(searched->columinfo.phone, value.phone) != 1) {
+		if (searched->pNext == NULL) return NULL;
+		searched = searched->pNext;
+	}
+	return searched;
+}
