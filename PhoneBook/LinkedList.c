@@ -37,8 +37,8 @@ ListNode* deleteFirst(ListNode* head) {
 ListNode* search(ListNode* head, ColumInfo value) {
 	ListNode* searched = head;
 	
-	while (strcmp(searched->columinfo.name, value.name) != 1
-		&& strcmp(searched->columinfo.phone, value.phone) != 1) {
+	while (strcmp(searched->columinfo.name, value.name) != 0
+		&& strcmp(searched->columinfo.phone, value.phone) != 0) {
 		if (searched->pNext == NULL) return NULL;
 		searched = searched->pNext;
 	}

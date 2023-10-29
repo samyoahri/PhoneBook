@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <conio.h>
-
+#include<time.h>
 #include "LinkedList.h"
 #include "LinkedListTest.h"
 
@@ -24,19 +24,13 @@ void swap(int* a, int* b) {
 	*b = tmp;
 }
 void main() {
-	//int a = 10, b = 20;
-	//swap(&a, &b);
-	//printf("a:%d, b:%d", a, b);
 	//testLinkedList(3);
-	int nNum = 100000;
-	ListNode* linkedList1 = NULL;
-	//ListNode* linkedList1 = (ListNode*)malloc(sizeof(ListNode));
-	//linkedList1 = NULL;
-	//ListNode* linkedList1 = (ListNode*)malloc(sizeof(ListNode));
-	//memset(linkedList1, NULL, sizeof(ListNode));
-	ListNode* linkedList2 = NULL;
-	printf("testLinkedList_insertFirst: %.3f\n", testLinkedList_insertFirst(&linkedList1, nNum));
-	printf("testLinkedList_deleteFirst: %.3f", testLinkedList_deleteFirst(&linkedList1, nNum));
+	int nNum = 10000;
+	ListNode* linkedList = NULL;
+	printf("testLinkedList_insertFirst: %.3f\n", testLinkedList_insertFirst(&linkedList, nNum));
+	printf("testLinkedList_deleteFirst: %.3f\n", testLinkedList_deleteFirst(&linkedList, nNum));
+	testLinkedList_insertFirst(&linkedList, nNum);
+	printf("testLinkedList_search: %.3f\n", testLinkedList_search(&linkedList, nNum));
 	//ListNode* linkedList = NULL;
 	//printf("testLinkedList_insertFirst: %.3f\n", testLinkedList_insertFirst(linkedList, nNum));
 	//

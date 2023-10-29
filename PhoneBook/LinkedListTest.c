@@ -67,3 +67,24 @@ double testLinkedList_deleteFirst(ListNode** node, int nNum) {
 	clock_t end = clock();
 	return (double)(end - start) / CLOCKS_PER_SEC;
 }
+double testLinkedList_search(ListNode** node, int nNum) {
+	int cnt = 0;
+	clock_t start = clock();
+	for (int i = 0; i < nNum; ++i) {
+		char name[MAX_LENGTH] = "samyoahri";
+		char phone[MAX_LENGTH] = "010-xxxx-xxxx";
+
+		sprintf(name, "samyoahri: %d", i);
+		sprintf(phone, "010-xxxx-xxxx: %d", i);
+		ListNode* tmp = *node;
+		while (strcmp(name, tmp->columinfo.name) != 0
+			&& strcmp(phone, tmp->columinfo.phone) != 0) {
+			if (tmp->pNext == NULL)	break;
+			tmp = tmp->pNext;
+		}
+		if (strcmp(name, tmp->columinfo.name) == 0) ++cnt;
+	}
+	clock_t end = clock();
+	printf("testLinkedList_search Ã£Àº°¹¼ö: %d\n", cnt);
+	return (double)(end - start) / CLOCKS_PER_SEC;
+}
