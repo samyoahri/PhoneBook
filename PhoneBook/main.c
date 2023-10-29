@@ -28,15 +28,15 @@ void main() {
 	//swap(&a, &b);
 	//printf("a:%d, b:%d", a, b);
 	//testLinkedList(3);
-	int nNum = 3;
+	int nNum = 100000;
 	ListNode* linkedList1 = NULL;
 	//ListNode* linkedList1 = (ListNode*)malloc(sizeof(ListNode));
 	//linkedList1 = NULL;
 	//ListNode* linkedList1 = (ListNode*)malloc(sizeof(ListNode));
 	//memset(linkedList1, NULL, sizeof(ListNode));
 	ListNode* linkedList2 = NULL;
-	printf("testLinkedList_insertFirst: %.3f\n", testLinkedList_insertFirst(linkedList1, nNum));
-	printf("testLinkedList_deleteFirst: %.3f", testLinkedList_deleteFirst(linkedList2, nNum));
+	printf("testLinkedList_insertFirst: %.3f\n", testLinkedList_insertFirst(&linkedList1, nNum));
+	printf("testLinkedList_deleteFirst: %.3f", testLinkedList_deleteFirst(&linkedList1, nNum));
 	//ListNode* linkedList = NULL;
 	//printf("testLinkedList_insertFirst: %.3f\n", testLinkedList_insertFirst(linkedList, nNum));
 	//

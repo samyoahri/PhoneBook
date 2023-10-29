@@ -4,6 +4,6 @@
 
 void testLinkedList(int nNum);
 
-double testLinkedList_insertFirst(ListNode* node, int nNum);
-double testLinkedList_deleteFirst(ListNode* node, int nNum);
+double testLinkedList_insertFirst(ListNode** node, int nNum);
+double testLinkedList_deleteFirst(ListNode** node, int nNum);
 #endif
