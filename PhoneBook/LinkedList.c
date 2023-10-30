@@ -13,7 +13,7 @@ void printList(ListNode* head) {
 	}
 	printf("NULL\n");
 }
-ListNode* insertFirst(ListNode* head, ColumInfo value) {
+ListNode* insertFirstNode(ListNode* head, ColumInfo value) {
 	ListNode* added = (ListNode*)malloc(sizeof(ListNode));
 
 	strcpy(added->columinfo.name, value.name);
@@ -24,7 +24,7 @@ ListNode* insertFirst(ListNode* head, ColumInfo value) {
 
 	return added;
 }
-ListNode* deleteFirst(ListNode* head) {
+ListNode* deleteFirstNode(ListNode* head) {
 	if (head == NULL)	return NULL;
 	ListNode* removed = (ListNode*)malloc(sizeof(ListNode));
 
@@ -34,7 +34,7 @@ ListNode* deleteFirst(ListNode* head) {
 
 	return head;
 }
-ListNode* search(ListNode* head, ColumInfo value) {
+ListNode* searchNode(ListNode* head, ColumInfo value) {
 	ListNode* searched = head;
 	
 	while (strcmp(searched->columinfo.name, value.name) != 0

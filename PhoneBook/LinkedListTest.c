@@ -49,7 +49,7 @@ double testLinkedList_insertFirst(ListNode** node, int nNum) {
 		strcpy(data.name, name);
 		strcpy(data.phone, phone);
 
-		*node = insertFirst(*node, data);
+		*node = insertFirstNode(*node, data);
 		//printList(node);
 		//printf("==============\n");
 	}
@@ -60,7 +60,7 @@ double testLinkedList_deleteFirst(ListNode** node, int nNum) {
 	clock_t start = clock();
 
 	for (int i = 0; i < nNum; ++i) {
-		*node = deleteFirst(*node);
+		*node = deleteFirstNode(*node);
 		//printList(node);
 		//printf("==============\n");
 	}

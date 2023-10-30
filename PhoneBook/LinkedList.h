@@ -18,8 +18,8 @@ typedef struct ListNode {
 #pragma pack(pop)
 
 void printList(ListNode* head);
-ListNode* insertFirst(ListNode* head, ColumInfo value);
-ListNode* deleteFirst(ListNode* head);
-ListNode* search(ListNode* head, ColumInfo value);
+ListNode* insertFirstNode(ListNode* head, ColumInfo value);
+ListNode* deleteFirstNode(ListNode* head);
+ListNode* searchNode(ListNode* head, ColumInfo value);
 
 #endif
