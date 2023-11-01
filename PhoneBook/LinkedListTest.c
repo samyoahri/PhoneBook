@@ -21,13 +21,13 @@ void testLinkedList(int nNum) {
 		strcpy(data.name, name);
 		strcpy(data.phone, phone);
 
-		head = insertFirst(head, data);
+		head = insertFirstNode(head, data);
 		printList(head);
 		printf("\n");
 	}
 	printf("===========================================================================================================================================================\n");
 	for (int i = 0; i < nNum; ++i) {
-		head = deleteFirst(head);
+		head = deleteFirstNode(head);
 		printList(head);
 		printf("\n");
 	}
