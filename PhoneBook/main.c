@@ -8,6 +8,7 @@
 #include "LinkedListTest.h"
 #include "BinarySearchTree.h"
 #include "BinarySearchTree_Test.h"
+#include "AVLTree.h"
 //typedef struct ColumInfo {
 //	char name[MAX_LENGTH];
 //	char phone[MAX_LENGTH];
@@ -30,31 +31,51 @@ void inorder1(TreeNode* root) {
 		inorder1(root->pRight);
 	}
 }
+
+
 void main() {
-	//testLinkedList(3);
+
+
+	////testLinkedList(3);
+	printf("================================================\n");
+	printf("[Linked list]\n");
+	int nNum = 100000;
 	
-	//int nNum = 100000;
+	ListNode* linkedList = NULL;
+	printf("insertFirst: %.3f\n", testLinkedList_insertFirst(&linkedList, nNum));
+	printf("deleteFirst: %.3f\n", testLinkedList_deleteFirst(&linkedList, nNum));
+	testLinkedList_insertFirst(&linkedList, nNum);
+	printf("search: %.3f\n", testLinkedList_search(&linkedList, nNum));
 	//
-	//ListNode* linkedList = NULL;
-	//printf("testLinkedList_insertFirst: %.3f\n", testLinkedList_insertFirst(&linkedList, nNum));
-	//printf("testLinkedList_deleteFirst: %.3f\n", testLinkedList_deleteFirst(&linkedList, nNum));
-	//testLinkedList_insertFirst(&linkedList, nNum);
-	//printf("testLinkedList_search: %.3f\n", testLinkedList_search(&linkedList, nNum));
-	////
-	//printf("================================================\n");
-	//
-	////testBinarySearchTree(nNum);
+	printf("================================================\n");
+	
+	//testBinarySearchTree(nNum);
 
-	//TreeNode* bst = NULL;
-	//printf("testBinarySearchTree_insert: %.3f\n", testBinarySearchTree_insert(&bst, nNum));
-	//printf("testBinarySearchTree_deleteFirst: %.3f\n", testBinarySearchTree_delete(&bst, nNum));
-	//testBinarySearchTree_insert(&bst, nNum);
-	//printf("testBinarySearchTree_search: %.3f\n", testBinarySearchTree_search(&bst, nNum));
+	printf("================================================\n");
+	printf("[Binary Search Tree]\n");
+	TreeNode* bst = NULL;
+	printf("insert: %.3f\n", testBinarySearchTree_insert(&bst, nNum));
+	printf("delete: %.3f\n", testBinarySearchTree_delete(&bst, nNum));
+	testBinarySearchTree_insert(&bst, nNum);
+	printf("search: %.3f\n", testBinarySearchTree_search(&bst, nNum));
+	testBinarySearchTree_delete(&bst, nNum);
+	printf("================================================\n");
 
+	//testAVLTree(nNum);
+	printf("================================================\n");
+	printf("[AVLTree]\n");
+	AVLNode* avltree = NULL;
+	printf("insert: %.3f\n", testBinarySearchTree_insert(&avltree, nNum));
+	printf("delete: %.3f\n", testBinarySearchTree_delete(&avltree, nNum));
+	testBinarySearchTree_insert(&avltree, nNum);
+	printf("search: %.3f\n", testBinarySearchTree_search(&avltree, nNum));
+	testBinarySearchTree_delete(&avltree, nNum);
+	printf("================================================\n");
 	//////////////////////////////////////////////////////////////////////////////////////////////////////
 	//int commandnum = 0;
-	//////loadlist(data_file_name);
-	//TreeNode* bst = NULL;
+	////////loadlist(data_file_name);
+	//////TreeNode* bst = NULL;
+	////bst = NULL;
 	//////testBinarySearchTree_insert(&bst, nNum);
 	//while ((commandnum = printui()) != 0) {
 	//	char szName[MAX_LENGTH] = { 0 };

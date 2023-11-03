@@ -128,6 +128,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AVLTree.c" />
+    <ClCompile Include="AVLTree_Test.c" />
     <ClCompile Include="BinarySearchTree.c" />
     <ClCompile Include="BinarySearchTree_Test.c" />
     <ClCompile Include="LinkedList.c" />
@@ -136,6 +138,8 @@
     <ClCompile Include="main.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AVLTree.h" />
+    <ClInclude Include="AVLTree_test.h" />
     <ClInclude Include="BinarySearchTree.h" />
     <ClInclude Include="BinarySearchTree_Test.h" />
     <ClInclude Include="LinkedList.h" />
