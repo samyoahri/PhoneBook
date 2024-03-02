@@ -128,21 +128,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="AVLTree.c" />
-    <ClCompile Include="AVLTree_Test.c" />
-    <ClCompile Include="BinarySearchTree.c" />
-    <ClCompile Include="BinarySearchTree_Test.c" />
-    <ClCompile Include="LinkedList.c" />
-    <ClCompile Include="LinkedListTest.c" />
-    <ClCompile Include="LinkedListTest.h" />
-    <ClCompile Include="main.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="AVLTree.h" />
-    <ClInclude Include="AVLTree_test.h" />
-    <ClInclude Include="BinarySearchTree.h" />
-    <ClInclude Include="BinarySearchTree_Test.h" />
-    <ClInclude Include="LinkedList.h" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
